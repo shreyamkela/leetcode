@@ -3,23 +3,12 @@ import java.util.HashMap;
 class Test {
     public static void main(String[] args) {
 
-    	int [][] matrix =   {
-    						 {1 ,2 ,3 ,4 ,5 },
+    	int [][] matrix =   {{1 ,2 ,3 ,4 ,5 },
     					     {6 ,7 ,8 ,9 ,10},
     					     {11,12,13,14,15},
     					     {16,17,18,19,20},
-    					     {21,22,23,24,25}
-    					    				 };
-    	/* loop i=0 j=0 (LAYER 1)
-    	 * 
-    	 * 1---2nd--->5--1st Step---->Temp
-    	 * ^       						          |
-    	 * |         					          |
-    	 * 3rd						   	          |
-    	 * |	     					            |
-    	 * 21<--4th--25<----5th----------
-    	 * 	   
-    	 */
+    					     {21,22,23,24,25}};
+
         int temp, rowLimit, columnLimit;
         int layer = (matrix[0].length)/2;
         int limit = (matrix[0].length-1);
