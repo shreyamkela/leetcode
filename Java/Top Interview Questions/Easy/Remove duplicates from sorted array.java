@@ -1,5 +1,5 @@
 class Solution {
-    public int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {     
         
         int count = 0; 
         
@@ -10,7 +10,6 @@ class Solution {
             }
         }
         
-        return count+1; // count+1 as we had started count from 0
-        
+        return count+1; // count+1 as we had started count from 0  
     }
 }
