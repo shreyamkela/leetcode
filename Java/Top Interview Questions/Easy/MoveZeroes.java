@@ -9,9 +9,7 @@ class Solution {
                 nums[i] = nums[zeropos];
                 nums[zeropos] = temp;
                 zeropos++;
-            }
-            
-        }
-        
+            }         
+        }        
     }
 }
