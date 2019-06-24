@@ -13,8 +13,8 @@ public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         // Inspired by the solution of myfavcat123
         // Refer - https://leetcode.com/explore/interview/card/top-interview-questions-medium/107/linked-list/785/discuss/49785/Java-solution-without-knowing-the-difference-in-len!
-        // We dont care about the nodes in the 2 lists that are before the intersection point. 
-        // Therefore we can neglect them.
+        // We dont care about the nodes in the 2 lists that are before the intersection point. After the intersection point, the length of the list left in the 2 list is the same.
+	// Therefore we first reduce the bigger list to the size of the smaller list then then find the intersection point.
         // What we do here is make the lengths of the 2 lists the same by trimming the nodes from the head in the 2 lists.
         // Keep removing till the length of the bigger list is equal to the length of the smaller. 
         // Once we have the lengths equal, we iterate both the lists together and find whether the 
